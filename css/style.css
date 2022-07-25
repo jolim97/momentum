@@ -16,7 +16,7 @@ div {
 
 .background-img {
     width: 100%;
-    height: 938px;
+    height: 100%;
     object-fit: cover;
     background-size: contain;
     background-repeat: no-repeat;
