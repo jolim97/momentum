@@ -3,6 +3,7 @@ body {
     box-sizing: border-box;
     color: white;
     background-color: grey;
+    font-size: 16px;
 }
 
 div {
@@ -21,7 +22,7 @@ div {
     background-repeat: no-repeat;
     /* background-size: cover; */
     background-position: center;
-    background-attachment:local;
+    background-attachment: local;
     /* background-attachment: scroll; */
     position: absolute;
     top: 0;
@@ -73,7 +74,7 @@ div {
 #clock {
     text-align: center;
     padding: 50px;
-    font-size: 60px;
+    font-size: 5rem;
     color: white;
 }
 
@@ -84,22 +85,21 @@ div {
 
 .bottom-content {
     height: fit-content;
-    min-height: 100px;
-    /* height: 200px; */
-    padding: 20px;
     width: 100%;
     color: white;
     background-color: black;
-    position: absolute;
-    bottom: 0px;
     text-align: center;
+    position: fixed;
+    bottom: 0;
 }
 
 #quote {
-    padding: 10px;
+    padding: 1rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    word-spacing: 8px;
-    font-size: 2vw;
+    word-spacing: 0.2rem;
+    /* font-size: 20px; */
+    font-size: 1.2rem;
+    overflow: scroll;
 }
 
 #quote p {
@@ -108,15 +108,16 @@ div {
 }
 
 #weather {
+    font-size: 0.9rem;
     position: absolute;
-    right: 10px;
-    bottom: 10px;
-
+    bottom: 1rem;
+    right: 1rem;
 }
 
 .mb-3 input {
     background: transparent;
 }
+
 .mb-3 input::placeholder {
     color: white;
 }
@@ -125,7 +126,7 @@ div {
     width: 50%;
     height: 200px;
     color: white;
-    font-size: 20px;
+    font-size: 1.2rem;
     border: none;
     background: none;
     margin: auto;
@@ -140,7 +141,7 @@ div {
     text-align: left;
 }
 
-#todo-list button{
+#todo-list button {
     background: none;
     border: none;
     color: red;
