@@ -1,6 +1,7 @@
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.getElementById("todo-list");
+const toDoClass = document.querySelector('.toDo');
 
 const TODOS_KEY = "todos"
 let toDos = [];
@@ -11,8 +12,9 @@ function saveToDos(){
 
 function deleteToDo(event){
     const li = event.target.parentElement;
-    toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id));
     li.remove();
+    toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id));
+    saveToDos();
 }
 
 function paintToDo(newTodoObj){
@@ -22,9 +24,9 @@ function paintToDo(newTodoObj){
     span.innerText = newTodoObj.text;
     const button = document.createElement("button");
     button.innerText = "❌";
-    button.addEventListener("click",deleteToDo)
-    li.appendChild(span);
+    button.addEventListener("click",deleteToDo);
     li.appendChild(button);
+    li.appendChild(span);
     toDoList.appendChild(li);
 }
 
@@ -51,3 +53,8 @@ if(savedToDos !== null){
     parsedToDos.forEach(paintToDo);
 }
 
+function hideToDO(event){
+    toDoClass.classList.add(HIDDEN_CLASSNAME);
+    console.log(toDoClass);
+}
+// loginForm.addEventListener("submit",hideToDO);

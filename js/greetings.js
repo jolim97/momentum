@@ -1,7 +1,6 @@
 const loginForm = document.querySelector("#login-form");
-const loginInput = document.querySelector("#login-form input");
-const link = document.querySelector("a");
-const greeting = document.querySelector("#greeting");
+const loginInput = document.querySelector("#username");
+const greeting = document.querySelector("#greeting-text");
 
 // Constant string variable with upper case.
 const HIDDEN_CLASSNAME = "hidden";
@@ -15,6 +14,8 @@ function onLoginSubmit(event){
         localStorage.setItem(USERNAME_KEY,username);
         loginForm.classList.add(HIDDEN_CLASSNAME);
         paintGreetings(username);
+    }else{
+        alert('Please write your name!')
     }
 }
 
@@ -37,3 +38,4 @@ if(savedUsername === null){
 } else {
     paintGreetings(savedUsername);
 }
+
