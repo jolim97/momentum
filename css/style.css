@@ -120,6 +120,7 @@ div {
     background: transparent;
     border-width: 0.1rem;
     border-color: white;
+    color: white;
 }
 
 .mb-3 input::placeholder {
