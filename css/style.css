@@ -32,10 +32,10 @@ div {
 .top-banner {
     width: 100%;
     height: 80px;
-    background: grey;
+    background: #222;
     margin-top: 0;
     padding: 20px;
-    opacity: 70%;
+    opacity: 30%;
 }
 
 #top-banner-text {
@@ -52,18 +52,18 @@ div {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 40%;
+    max-width: 30rem;
+    min-width: 20rem;
     height: auto;
-    max-width: 400px;
     padding: 10px;
     color: white;
     font-weight: 700;
-    /* background-color: #eee; */
 }
 
 #login-submit {
     background-color: #eee;
-    color: dodgerblue;
+    color: #004f98;
     font-weight: 600;
     border: none;
     display: block;
@@ -73,8 +73,9 @@ div {
 
 #clock {
     text-align: center;
-    padding: 50px;
-    font-size: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-size: 4rem;
     color: white;
 }
 
@@ -87,7 +88,8 @@ div {
     height: fit-content;
     width: 100%;
     color: white;
-    background-color: black;
+    background-color: #222;
+    opacity: 70%;
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -116,6 +118,8 @@ div {
 
 .mb-3 input {
     background: transparent;
+    border-width: 0.1rem;
+    border-color: white;
 }
 
 .mb-3 input::placeholder {
@@ -123,17 +127,15 @@ div {
 }
 
 .toDo {
-    width: 50%;
+    width: 80%;
+    min-width: 20rem;
+    max-width: 40rem;
     height: 200px;
     color: white;
     font-size: 1.2rem;
     border: none;
     background: none;
     margin: auto;
-}
-
-#todo-input {
-    width: 50%;
 }
 
 #todo-list {
